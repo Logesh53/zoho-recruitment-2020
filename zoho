@@ -1,0 +1,33 @@
+package zoho;
+
+import java.util.*;
+
+public class zoho {
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+		int n=scan.nextInt();
+		for(int index=0;index<=n;index++)
+		{
+			int num=index;
+			for(int index1=0;index1<=n+n;index1++)
+			{
+				if(index1<n-index || index1>n+index)
+				{
+				    System.out.print(" ");
+				}
+				else if(index1<n)
+				{
+					System.out.print(num);
+					num--;
+				}
+				else
+				{
+					System.out.print(num);
+					++num;
+				}
+			}
+			System.out.println();
+		}
+		scan.close();
+	}
+}
